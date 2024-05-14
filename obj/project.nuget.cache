@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mLrJCq/zo1gnEFCZbby7YOovSr/PqemK8XofI0NTcjeTLbhnMVon8PmPVQWV4hHbT78AHU7Q3JrgZCXnC88X2Q==",
+  "dgSpecHash": "ab610mPMjhqQmLJWHC9iGhQqEGtU6N9t2vB5qZ3VZm+/zK5+BlaVW8lp3C69NKEHsyHLXKpHQ5LiDkeoy03KIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aluno\\Desktop\\exerciciosStruct\\exemplo.csproj",
+  "projectFilePath": "C:\\Users\\aluno\\Desktop\\ExercicioBrunoStruct\\exemplo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

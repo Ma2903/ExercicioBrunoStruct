@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aluno\\Desktop\\exerciciosStruct\\exemplo.csproj": {}
+    "C:\\Users\\aluno\\Desktop\\ExercicioBrunoStruct\\exemplo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aluno\\Desktop\\exerciciosStruct\\exemplo.csproj": {
+    "C:\\Users\\aluno\\Desktop\\ExercicioBrunoStruct\\exemplo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aluno\\Desktop\\exerciciosStruct\\exemplo.csproj",
+        "projectUniqueName": "C:\\Users\\aluno\\Desktop\\ExercicioBrunoStruct\\exemplo.csproj",
         "projectName": "exemplo",
-        "projectPath": "C:\\Users\\aluno\\Desktop\\exerciciosStruct\\exemplo.csproj",
+        "projectPath": "C:\\Users\\aluno\\Desktop\\ExercicioBrunoStruct\\exemplo.csproj",
         "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aluno\\Desktop\\exerciciosStruct\\obj\\",
+        "outputPath": "C:\\Users\\aluno\\Desktop\\ExercicioBrunoStruct\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

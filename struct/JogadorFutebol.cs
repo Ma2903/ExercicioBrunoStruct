@@ -40,11 +40,7 @@ public struct JogadorFutebol
     }
     public void verificarVinculoClube()
     {  
-        if(this.clube == "")
-        {
-            this.clube = "Sem clube";
-        }
-        else if(this.clube == null)
+        if(this.clube == "" || this.clube == null)
         {
             this.clube = "Sem clube";
         }
