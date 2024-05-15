@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ab610mPMjhqQmLJWHC9iGhQqEGtU6N9t2vB5qZ3VZm+/zK5+BlaVW8lp3C69NKEHsyHLXKpHQ5LiDkeoy03KIQ==",
+  "dgSpecHash": "BEo7eNnLsXX6DqLg06PzNjUqx270BitqBm/SmyhCSN0MltBo+c9yOMPrpZQQjvzmUf4aRvL4Q1qmzEkHJDsuxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aluno\\Desktop\\ExercicioBrunoStruct\\exemplo.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\JP\\Downloads\\ExercicioBrunoStruct\\exemplo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JP\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\JP\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\JP\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\JP\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
   "logs": []
 }
