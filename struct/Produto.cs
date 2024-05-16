@@ -14,22 +14,22 @@ public struct Produto
 
     public int quantidade;
 
-    public string estoque;
+    public double DescontoPorcentagem;
 
     //operações da struct
-    public Produto (string nome, double valor, int DescontoValor,  int quantidade, string estoque)
+    public Produto (string nome, double valor, int DescontoValor,  int quantidade, double DescontoPorcentagem)
     {
         this.nome = nome;
         this.valor = valor;
         this.DescontoValor = DescontoValor;
         this.quantidade = quantidade;
-        this.estoque = estoque;
+        this.DescontoPorcentagem= DescontoPorcentagem;
     }
 
     //operações
     public string imprimir()
     {
-        return "\n Nome: " + this.nome + "\n Quantidade: " + this.estoque + "\n Valor: R$" + string.Format("{0:0.00}", this.valor);
+        return "\n Nome: " + this.nome + "\n Quantidade: " + this.quantidade + "\n Valor: R$" + string.Format("{0:0.00}", this.valor);
     }
 
     public void aplicarCupomDescontoValor()
@@ -39,19 +39,12 @@ public struct Produto
 
     public void aplicarCupomDescontoPorcentagem()
     {
-        //fazer amanhã
+        double desconto =  this.valor * (DescontoPorcentagem / 100);
+        this.valor -= desconto;
     }
 
-    public void verificarQuantidadeEmEstoque()
+    public int verificarQuantidadeEmEstoque()
     {
-        if(this.quantidade == 0)
-        {
-            estoque = Convert.ToString(this.quantidade);
-            estoque = "Não há disponibilidade no estoque";
-        }
-        else
-        {
-            estoque = Convert.ToString(this.quantidade); 
-        }
+        return this.quantidade;
     }
 }

@@ -33,10 +33,12 @@ namespace TAD
             Produto produto1 = new();
 
             produto1.nome = "Miojo Nissin Sabor Carne";
-            produto1.valor = 2.99;
+            produto1.valor = 5.00;
             produto1.DescontoValor = 1;
-            produto1.quantidade = 0;
+            produto1.DescontoPorcentagem = 25;
+            produto1.quantidade = 4;
 
+            produto1.aplicarCupomDescontoPorcentagem();
             produto1.aplicarCupomDescontoValor();
             produto1.verificarQuantidadeEmEstoque();
             Console.WriteLine(produto1.imprimir());
