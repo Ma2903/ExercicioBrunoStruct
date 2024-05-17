@@ -42,6 +42,19 @@ namespace TAD
             produto1.aplicarCupomDescontoValor();
             produto1.verificarQuantidadeEmEstoque();
             Console.WriteLine(produto1.imprimir());
+
+            Professor professor = new Professor("João Silva", 5000.0, 40);
+        
+            professor.Imprimir();
+            
+            professor.ReajusteSalarialEmValor(500.0);
+            professor.ReajusteSalarialEmPorcentagem(10.0);
+            professor.DescontoSalarialPorFaltaEmValor(200.0);
+            professor.DescontoSalarialPorFaltaEmPorcentagem(5.0);
+            professor.AumentarCargaHorariaDeTrabalho(10, 1000.0);
+            
+            professor.Imprimir();
+            
         }
     }   
 }

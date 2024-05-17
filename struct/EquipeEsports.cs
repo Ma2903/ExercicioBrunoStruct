@@ -20,7 +20,7 @@ public struct EquipeEsports{
     public void atualizarValorTotalDasPremiacoes(double valor){
         this.ValorTotalPremiacoes += valor;
     }
-    public string verificarAnoDeEstreia(){
+    public string VerificarAnoDeEstreia(){
         DateTime dataAtual = DateTime.Now;
         int anoAtual = dataAtual.Year;
 
@@ -28,5 +28,13 @@ public struct EquipeEsports{
             return "Novatos";
         }
         return "Veterano";
+    }
+    public string Imprimir()
+    {
+        return $"Nome da Equipe: {this.Nome}\n" +
+                $"Ano de Estreia: {this.AnoDeEstreia}\n" +
+                $"Status: {this.VerificarAnoDeEstreia()}\n" +
+                $"Campeonatos Vencidos: {this.CampeonatosVencidos}\n" +
+                $"Valor Total das Premiações: {this.ValorTotalPremiacoes:C}";
     }
 }
