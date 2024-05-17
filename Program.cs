@@ -37,15 +37,16 @@ namespace TAD
             produto1.DescontoValor = 1;
             produto1.DescontoPorcentagem = 25;
             produto1.quantidade = 4;
+            produto1.descricao = "Macarrão Instântaneo sabor carne";
+            produto1.fabricante = "Nissin";
 
             produto1.aplicarCupomDescontoPorcentagem();
             produto1.aplicarCupomDescontoValor();
             produto1.verificarQuantidadeEmEstoque();
             Console.WriteLine(produto1.imprimir());
 
+            //Exercicio Professor
             Professor professor = new Professor("João Silva", 5000.0, 40);
-        
-            professor.Imprimir();
             
             professor.ReajusteSalarialEmValor(500.0);
             professor.ReajusteSalarialEmPorcentagem(10.0);
@@ -53,8 +54,17 @@ namespace TAD
             professor.DescontoSalarialPorFaltaEmPorcentagem(5.0);
             professor.AumentarCargaHorariaDeTrabalho(10, 1000.0);
             
+            Console.WriteLine("");
             professor.Imprimir();
-            
+
+            //Exercicio EquipeEsports            
+            EquipeEsports equipeEsports = new EquipeEsports("Juventos",2000);
+
+            equipeEsports.registrarCampeonatoVencido(2000.0);
+
+            Console.WriteLine("");
+            Console.WriteLine(equipeEsports.Imprimir());
+
         }
     }   
 }

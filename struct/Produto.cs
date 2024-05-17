@@ -10,41 +10,55 @@ public struct Produto
 
     public double valor;
 
-    public int DescontoValor;
+    public string descricao;
 
     public int quantidade;
+
+    public string fabricante;
+
+    public double DescontoValor;
 
     public double DescontoPorcentagem;
 
     //operações da struct
-    public Produto (string nome, double valor, int DescontoValor,  int quantidade, double DescontoPorcentagem)
+    public Produto (string nome, double valor,  int quantidade, string descricao, string fabricante, 
+    double DescontoValor, double DescontoPorcentagem)
     {
         this.nome = nome;
         this.valor = valor;
-        this.DescontoValor = DescontoValor;
         this.quantidade = quantidade;
-        this.DescontoPorcentagem= DescontoPorcentagem;
+        this.descricao = descricao;
+        this.fabricante = fabricante;
+        this.DescontoValor = DescontoValor;
+        this.DescontoPorcentagem = DescontoPorcentagem;
     }
 
     //operações
     public string imprimir()
     {
-        return "\n Nome: " + this.nome + "\n Quantidade: " + this.quantidade + "\n Valor: R$" + string.Format("{0:0.00}", this.valor);
+        return "\n Nome: " + this.nome + "\n Quantidade: " + this.quantidade + "\n Valor: R$" +
+        string.Format("{0:0.00}", this.valor)  + "\n Descrição: " + this.descricao + "\n Fabricante: " + 
+        this.fabricante;
     }
 
     public void aplicarCupomDescontoValor()
     {
-        this.valor = valor - DescontoValor;
+        if (DescontoValor > this.valor)
+        this.valor = 0.0f;
+        else{
+            this.valor = this.valor - DescontoValor;
+        }
     }
 
     public void aplicarCupomDescontoPorcentagem()
     {
-        double desconto =  this.valor * (DescontoPorcentagem / 100);
+        double desconto =  this.valor * (DescontoPorcentagem / 100.0f);
         this.valor -= desconto;
     }
 
-    public int verificarQuantidadeEmEstoque()
+    public Boolean verificarQuantidadeEmEstoque()
     {
-        return this.quantidade;
+        if(this.quantidade > 0) return true;
+        else return false;
     }
 }
